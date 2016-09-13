@@ -7,7 +7,7 @@ var callEdges = universe.edgesTaggedWithAny(XCSG.Call)
 var supertypeEdges = universe.edgesTaggedWithAny(XCSG.Supertype)
 
 // define the app to be everything contained in the project "CustomCollection"
-var app = containsEdges.forward(universe.project("CustomCollection"))
+var app = containsEdges.forward(universe.project("MyProject"))
 
 // grab a reference to the java.util.Collection class node
 var collectionType = typeSelect("java.util", "Collection")
